@@ -79,3 +79,60 @@ body{
     transform: rotate(180deg);
     opacity: 0;
 }
+
+.overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+    overflow: scroll;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+    img{
+        animation: zoom-in 1s ease;
+    }
+}
+
+.overlay .img-container {
+    overflow-y: visible;
+    margin: 4% auto;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.overlay img{
+    max-width: 90vh;
+    height: auto;
+    width: auto;
+    max-height: 90vh;
+    border-radius: 8px;
+    border: 2px solid rgba(193, 158, 71, 0.36);
+    box-shadow: 0 0 100px rgba(193, 158, 71, 0.36);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@keyframes zoom-in {
+    0% {
+        scale: 0;
+    }
+    50% {
+        scale: 105%;
+    }
+    100% {
+        scale: 100%;
+        transform: translateX(0%) translateY(0%);
+    }
+}
