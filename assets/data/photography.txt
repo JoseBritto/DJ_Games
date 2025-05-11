@@ -1,0 +1,16 @@
+Photo 1|assets/img/insta/insta1.jpg
+Photo 2|assets/img/insta/insta2.jpg
+Photo 3|assets/img/insta/insta3.jpg
+Photo 4|assets/img/insta/insta4.jpg
+Photo 5|assets/img/insta/insta5.jpg
+Photo 6|assets/img/insta/insta6.jpg
+Photo 7|assets/img/insta/insta7.jpg
+Photo 8|assets/img/insta/insta8.jpg
+Photo 9|assets/img/insta/insta9.jpg
+Photo 10|assets/img/insta/insta10.jpg
+Photo 11|assets/img/insta/insta11.jpg
+Photo 12|assets/img/insta/insta12.jpg
+Photo 13|assets/img/insta/insta13.jpg
+Photo 14|assets/img/insta/insta14.jpg
+Photo 15|assets/img/insta/insta15.jpg
+Photo 16|assets/img/insta/insta16.jpg
