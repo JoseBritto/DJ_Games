@@ -227,10 +227,17 @@
         'assets/videos/bg2.webm'
     ];
 
-    let currentVideo = 0;
+    let currentVideo = localStorage.getItem('currentVideo');
+    if (currentVideo === null) {
+        currentVideo = -1;
+    } else {
+        currentVideo = parseInt(currentVideo);
+    }
+    currentVideo = (currentVideo + 1) % videoSources.length;
 
     function playVideo(index) {
         video.src = videoSources[index];
+        localStorage.setItem('currentVideo', currentVideo);
         video.play();
     }
 
