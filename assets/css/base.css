@@ -1,5 +1,9 @@
 @import "reset.css";
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 body{
     background: #101014;
     margin: 0;
