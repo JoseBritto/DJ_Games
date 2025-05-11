@@ -111,6 +111,11 @@ function showImg(img, alt, e) {
 
     overlay.classList.add('active');
     overlay.querySelector('img').src = img.src;
+    overlay.querySelector('img').style.cursor = 'pointer';
+    overlay.querySelector('img').onclick = (e) => {
+        e.stopPropagation();
+        window.location = img.src;
+    }
     document.body.style.overflowY = 'hidden';
     fetch('assets/data/' + alt + '.txt')
         .then(response => {
@@ -137,6 +142,11 @@ function showImg(img, alt, e) {
                 let newImg = document.createElement('img');
                 newImg.src = src;
                 newImg.alt = alt;
+                newImg.style.cursor = 'pointer';
+                newImg.onclick = (e) => {
+                    e.stopPropagation();
+                    window.location = src;
+                }
                 newImg.classList.add('extraImg');
                 newImg.addEventListener('click', (e) => {
                     e.stopPropagation();
