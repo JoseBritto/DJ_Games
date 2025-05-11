@@ -35,7 +35,7 @@ body{
     bottom: 20px;
     right: 20px;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: transparent;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -54,9 +54,12 @@ body{
 }
 
 .material-icons {
-    color: #C19E47;
+    color: rgba(193, 158, 71, 0.65);
     font-size: 28px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.material-icons:hover{
+    color: #C19E47;
 }
 
 .blur {
