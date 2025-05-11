@@ -46,7 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const overlay = document.getElementById('overlay');
     const imgContainer = overlay.querySelector('.img-container');
-    imgContainer.addEventListener('click', (e) => {
+    const image = overlay.querySelector('img');
+    image.addEventListener('click', (e) => {
         e.stopPropagation();
     });
     overlay.addEventListener('click', () => {

@@ -110,11 +110,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 20px;
+    min-height: 100%;
 }
 .overlay img{
-    max-width: 70vw;
+    max-width: 85vw;
     height: auto;
     width: auto;
     max-height: 90vh;
