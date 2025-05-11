@@ -150,6 +150,6 @@ footer{
 /*mobile*/
 @media only screen and (max-width: 600px) {
     body div.content {
-        background: rebeccapurple !important;
+       /* background: rebeccapurple !important;*/
     }
 }
