@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DJ Games</title>
+
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+
+    <!--Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<video class="bg-video" id="bgVideo" autoplay muted playsinline>
+    Your browser does not support the video tag.
+</video>
+
+<div class="content blur">
+    <!--Profile Img-->
+    <div class="profile-img">
+        <img src="/assets/img/dj_dp.png" alt="Profile Image">
+    </div>
+    <h1>Darshan Krishna</h1>
+    <p>3D Modelling, Animation, Design & More</p>
+    <div class="socials">
+        <a class="social-button" href="https://www.instagram.com/_dj_games/" target="_blank">
+            <i class="lab la-instagram"></i>
+        </a>
+        <a class="social-button" href="https://www.linkedin.com/in/darshan-krishna-50600625a/" target="_blank">
+            <i class="lab la-linkedin-in"></i>
+        </a>
+        <a class="social-button" href="https://www.artstation.com/darshankrishna" target="_blank">
+            <i class="lab la-artstation"></i>
+        </a>
+        <a class="social-button" href="https://twitter.com/DJ_Games001/" target="_blank">
+            <i class="lab la-twitter"></i>
+        </a>
+    </div>
+</div>
+
+<button class="scroll-hint blur">
+    <span>Scroll to see more</span>
+    <!--<span id="scrollIcon" class="material-icons">arrow_downward</span>-->
+</button>
+
+<button class="mute-toggle blur" onclick="toggleMute()">
+    <span id="muteIcon" class="material-icons">volume_off</span>
+</button>
+
+<script>
+    const video = document.getElementById('bgVideo');
+    const icon = document.getElementById('muteIcon');
+
+    const videoSources = [
+        '/assets/videos/bg4.webm',
+        '/assets/videos/bg1.webm',
+        '/assets/videos/bg3.webm',
+        '/assets/videos/bg2.webm'
+    ];
+
+    let currentVideo = 0;
+
+    function playVideo(index) {
+        video.src = videoSources[index];
+        video.play();
+    }
+
+    // On video end, go to next
+    video.addEventListener('ended', () => {
+        currentVideo = (currentVideo + 1) % videoSources.length;
+        playVideo(currentVideo);
+    });
+    video.addEventListener('error', () => {
+        currentVideo = (currentVideo + 1) % videoSources.length;
+        playVideo(currentVideo);
+    });
+
+    // Initial play
+    document.addEventListener('DOMContentLoaded', () => {
+        playVideo(currentVideo);
+    });
+
+    function toggleMute() {
+        icon.classList.add(video.muted ? 'unmuting' : 'muting');
+
+        // Delay icon swap for animation
+        setTimeout(() => {
+            video.muted = !video.muted;
+            icon.textContent = video.muted ? 'volume_off' : 'volume_up';
+            icon.classList.remove('muting', 'unmuting');
+        }, 150);
+    }
+</script>
+</body>
+</html>
