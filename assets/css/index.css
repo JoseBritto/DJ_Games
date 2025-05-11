@@ -54,7 +54,7 @@
     left: 50%;
     transform: translateX(-50%);
     background: rgba(16, 16, 20, 0.8);
-    width: 100%;
+    width: 101%;
     border-radius: 0;
     overflow-x: clip;
     display: flex;
