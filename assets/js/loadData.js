@@ -102,6 +102,9 @@ function showImg(img, alt, e) {
                 newImg.src = src;
                 newImg.alt = alt;
                 newImg.classList.add('extraImg');
+                newImg.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                });
                 overlay.querySelector('.img-container').insertBefore(newImg, null);
             });
         })
