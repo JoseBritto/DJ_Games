@@ -42,7 +42,7 @@
     </div>
 </div>
 
-<button class="scroll-hint blur">
+<button class="scroll-hint blur" onclick="window.location.href = '#page2';">
     <span>Scroll to see more</span>
     <!--<span id="scrollIcon" class="material-icons">arrow_downward</span>-->
 </button>
@@ -50,6 +50,11 @@
 <button class="mute-toggle blur" onclick="toggleMute()">
     <span id="muteIcon" class="material-icons">volume_off</span>
 </button>
+
+
+<div class="content page2" id="page2">
+</div>
+
 
 <script>
     const video = document.getElementById('bgVideo');
