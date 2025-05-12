@@ -114,7 +114,7 @@ body{
     gap: 20px;
     min-height: 100%;
 }
-.overlay img{
+.overlay img {
     max-width: 85vw;
     height: auto;
     width: auto;
@@ -123,6 +123,10 @@ body{
     border: 2px solid rgba(193, 158, 71, 0.36);
     box-shadow: 0 0 100px rgba(193, 158, 71, 0.36);
     transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.overlay iframe {
+    border: 2px solid rgba(193, 158, 71, 0.36);
+    box-shadow: 0 0 100px rgba(193, 158, 71, 0.36);
 }
 
 

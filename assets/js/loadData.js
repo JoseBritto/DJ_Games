@@ -140,12 +140,22 @@ function showImg(img, alt, e) {
                     return;
                 }
                 let newImg = document.createElement('img');
-                newImg.src = src;
-                newImg.alt = alt;
-                newImg.style.cursor = 'pointer';
-                newImg.onclick = (e) => {
-                    e.stopPropagation();
-                    window.location = src;
+                if(src.includes('youtube.com') || src.includes('youtu.be')) {
+                    newImg = document.createElement('div');
+                    const raw = `
+                        <iframe style="width: 100%; height: 800px; border-radius: 8px; overflow: clip" src="https://www.youtube.com/embed/eW0SICkWFrw" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    `;
+                    newImg.innerHTML = raw;
+                    newImg = newImg.firstElementChild;
+                    newImg.src = src;
+                } else {
+                    newImg.src = src;
+                    newImg.alt = alt;
+                    newImg.style.cursor = 'pointer';
+                    newImg.onclick = (e) => {
+                        e.stopPropagation();
+                        window.location = src;
+                    }
                 }
                 newImg.classList.add('extraImg');
                 newImg.addEventListener('click', (e) => {
