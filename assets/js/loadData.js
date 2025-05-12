@@ -143,7 +143,7 @@ function showImg(img, alt, e) {
                 if(src.includes('youtube.com') || src.includes('youtu.be')) {
                     newImg = document.createElement('div');
                     const raw = `
-                        <iframe style="width: 100%; height: 800px; border-radius: 8px; overflow: clip" src="https://www.youtube.com/embed/eW0SICkWFrw" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe style="width: 100%; height: 50vw; max-height: 800px; border-radius: 8px; overflow: clip" src="https://www.youtube.com/embed/eW0SICkWFrw" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     `;
                     newImg.innerHTML = raw;
                     newImg = newImg.firstElementChild;
