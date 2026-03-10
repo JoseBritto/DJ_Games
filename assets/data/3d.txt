@@ -1,5 +1,5 @@
 UbiNext2026|assets/img/Ubi2026Thumbnail.png
-Beauty Shot 02|https://cdnb.artstation.com/p/assets/images/images/085/886/505/large/dj-games-beautyshot-02.jpg?1741869535
+Beauty Shot 02|assets/img/Next2025.PNG
 Diorama2|https://cdnb.artstation.com/p/assets/images/images/075/033/047/large/dj-games-desn2011-a5-sc1-darshankrishnamanoj.jpg?1713558931
 Gun|https://cdna.artstation.com/p/assets/images/images/070/955/318/large/dj-games-1000012406.jpg?1704077044
 Kitchen CC|https://cdnb.artstation.com/p/assets/images/images/077/865/381/large/dj-games-kitchen-cc.jpg?1720558157
