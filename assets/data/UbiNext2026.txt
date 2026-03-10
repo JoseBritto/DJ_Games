@@ -1,0 +1,13 @@
+Video|https://www.youtube.com/embed/qGpEhY1ry84?si=povLVSjfKdYUaPVb
+image1|https://cdnb.artstation.com/p/assets/images/images/097/094/071/large/dj-games-1.jpg?1773164247
+image2|https://cdnb.artstation.com/p/assets/images/images/097/094/073/large/dj-games-2.jpg?1773164252
+image3|https://cdna.artstation.com/p/assets/images/images/097/094/074/large/dj-games-3.jpg?1773164256
+image4|https://cdnb.artstation.com/p/assets/images/images/097/094/077/large/dj-games-4.jpg?1773164260
+image5|https://cdnb.artstation.com/p/assets/images/images/097/094/081/large/dj-games-6.jpg?1773164270
+image6|https://cdnb.artstation.com/p/assets/images/images/097/094/083/large/dj-games-7.jpg?1773164274
+Breakdown1|https://cdnb.artstation.com/p/assets/images/images/097/095/255/large/dj-games-pod-wireframe2.jpg?1773166433
+Breakdown2|https://cdnb.artstation.com/p/assets/images/images/097/095/251/large/dj-games-reactor-wireframe2.jpg?1773166425
+Breakdown3|https://cdnb.artstation.com/p/assets/images/images/097/095/271/large/dj-games-gym-01.jpg?1773166466
+Breakdown4|https://cdna.artstation.com/p/assets/images/images/097/095/274/large/dj-games-gym-02.jpg?1773166470
+Breakdown5|https://cdnb.artstation.com/p/assets/images/images/097/095/277/large/dj-games-gym-04.jpg?1773166474
+Breakdown6|https://cdnb.artstation.com/p/assets/images/images/097/095/281/large/dj-games-gym-06.jpg?1773166493
