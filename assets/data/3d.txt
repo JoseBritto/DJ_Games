@@ -1,9 +1,9 @@
 UbiNext2026|assets/img/Ubi2026Thumbnail.png
 Beauty Shot 02|assets/img/Next2025.PNG
 Diorama2|https://cdnb.artstation.com/p/assets/images/images/075/033/047/large/dj-games-desn2011-a5-sc1-darshankrishnamanoj.jpg?1713558931
-Gun|https://cdna.artstation.com/p/assets/images/images/070/955/318/large/dj-games-1000012406.jpg?1704077044
+Gun1|https://cdna.artstation.com/p/assets/images/images/070/955/318/large/dj-games-1000012406.jpg?1704077044
 Kitchen CC|https://cdnb.artstation.com/p/assets/images/images/077/865/381/large/dj-games-kitchen-cc.jpg?1720558157
-Abstract 01 CC2|https://cdnb.artstation.com/p/assets/images/images/072/441/065/large/dj-games-abstract01-cc2.jpg?1707361598
+SacredAltar|https://cdnb.artstation.com/p/assets/images/images/072/441/065/large/dj-games-abstract01-cc2.jpg?1707361598
 Diorama1|https://cdna.artstation.com/p/assets/images/images/070/514/564/large/dj-games-lastframe.jpg?1702709696
 A2 04|https://cdnb.artstation.com/p/assets/images/images/069/113/615/large/dj-darshankrishnamanoj-a2-04.jpg?1699374313
 Dystopian Street Color Correct|https://cdna.artstation.com/p/assets/images/images/067/808/958/large/dj-destopian-street-colorcorrect.jpg?1696285554
