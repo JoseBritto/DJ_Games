@@ -8,7 +8,7 @@ Diorama1|https://cdna.artstation.com/p/assets/images/images/070/514/564/large/dj
 A2 04|https://cdnb.artstation.com/p/assets/images/images/069/113/615/large/dj-darshankrishnamanoj-a2-04.jpg?1699374313
 Dystopian Street Color Correct|https://cdna.artstation.com/p/assets/images/images/067/808/958/large/dj-destopian-street-colorcorrect.jpg?1696285554
 Terrarium Color Correct 5|https://cdna.artstation.com/p/assets/images/images/066/958/910/large/dj-terrarium-colorcorrect5.jpg?1694184152
-Cyberpunk Room Animation|assets/img/cyberpunk-room-anim.jpg
+CyberpunkRoomAnimation|assets/img/cyberpunk-room-anim.jpg
 Dystopian Room Color Fix 3|https://cdnb.artstation.com/p/assets/images/images/064/323/891/large/dj-destopian-room-colorfix3.jpg?1687668137
 Lightsaber|assets/img/lightsaber.jpg
 Main Camera Render|https://cdnb.artstation.com/p/assets/images/images/062/967/377/large/dj-render-main-camera.jpg?1684364446
