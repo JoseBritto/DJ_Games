@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
         <img loading="lazy" src="SRC" alt="ALT" onclick="showImg(this, 'ALT', event)" class="thumbnail">
     </div>
     `;
+    const htmlSnippetWithLink = `
+    <div class="img">
+        <img loading="lazy" src="SRC" alt="ALT" onclick="showImg(this, 'ALT', event, 'LINK')" class="thumbnail">
+    </div>
+    `;
 
     fetch('assets/data/3d.txt')
         .then(response => {
@@ -38,42 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tempDiv.innerHTML = imgHtml;
                 const newElement = tempDiv.firstElementChild; // The <div class="img">
                 // Insert it before `photos` inside `art3d`
-                art3d.parentNode.insertBefore(newElement, photos);
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching the file:', error);
-        });
-
-    fetch('assets/data/photography.txt')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to get photography.txt. Network response was ' + response.status + ' ' + response.statusText);
-            }
-            return response.text();
-        })
-        .then(data => {
-            const lines = data.split('\n');
-            lines.forEach(line => {
-                if(!line || line.trim() === '') return; // Skip empty lines
-                let [alt, src] = line.split('|');
-                if (!alt || !src) {
-                    console.error('Invalid line format:', line);
-                    return;
-                }
-                alt = alt.trim();
-                src = src.trim();
-                if(alt === '' || src === '') {
-                    console.error('Empty alt or src:', line);
-                    return;
-                }
-                const imgHtml = htmlSnippet.replace('SRC', src).replaceAll('ALT', alt);
-                // Convert the string to a DOM node
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = imgHtml;
-                const newElement = tempDiv.firstElementChild; // The <div class="img">
-                // Insert it before `photos` inside `art3d`
-                photos.parentNode.insertBefore(newElement, games);
+                art3d.parentNode.insertBefore(newElement, games);
             });
         })
         .catch(error => {
@@ -84,6 +54,41 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to get games.txt. Network response was ' + response.status + ' ' + response.statusText);
+            }
+            return response.text();
+        })
+        .then(data => {
+            const lines = data.split('\n');
+            lines.forEach(line => {
+                if(!line || line.trim() === '') return; // Skip empty lines
+                let [alt, src, link] = line.split('|');
+                if (!alt || !src) {
+                    console.error('Invalid line format:', line);
+                    return;
+                }
+                alt = alt.trim();
+                src = src.trim();
+                link = link.trim();
+                if(alt === '' || src === '' || link === '') {
+                    console.error('Empty alt, src or link:', line);
+                    return;
+                }
+                const imgHtml = htmlSnippetWithLink.replace('SRC', src).replaceAll('ALT', alt).replaceAll('LINK', link);
+                // Convert the string to a DOM node
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = imgHtml;
+                const newElement = tempDiv.firstElementChild; // The <div class="img">
+                games.parentNode.insertBefore(newElement, photos);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching the file:', error);
+        });
+
+    fetch('assets/data/photography.txt')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to get photography.txt. Network response was ' + response.status + ' ' + response.statusText);
             }
             return response.text();
         })
@@ -133,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-function showImg(img, alt, e) {
+function showImg(img, alt, e, link) {
     console.log(alt);
     const overlay = document.getElementById('overlay');
     const imgContainer = overlay.querySelector('.img-container');
@@ -150,7 +155,7 @@ function showImg(img, alt, e) {
     overlay.querySelector('img').style.cursor = 'pointer';
     overlay.querySelector('img').onclick = (e) => {
         e.stopPropagation();
-        window.location = img.src;
+        window.location = link ?? img.src;
     }
     document.body.style.overflowY = 'hidden';
     fetch('assets/data/' + alt + '.txt')
