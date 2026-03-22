@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     const htmlSnippetWithLink = `
     <div class="img">
-        <img loading="lazy" src="SRC" alt="ALT" onclick="showImg(this, 'ALT', event, 'LINK')" class="thumbnail">
+        <img loading="lazy" src="SRC" alt="ALT" onclick="window.open('LINK')" class="thumbnail">
     </div>
     `;
 
