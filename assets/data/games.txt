@@ -1,4 +1,4 @@
-WavePlanet|assets/img/Games/WavePlanet.png|https://dj3d.itch.io/waveplanet
+WavePlanet|assets/img/Games/WavePlanet.png|https://store.steampowered.com/app/4848940/Wave_Planet/
 AbyssalReturn|assets/img/Games/AbyssalReturn.png|https://dj3d.itch.io/abyssal-return
 GodOfAncientTomb|assets/img/Games/GOAT_SplashScreen.png|https://win8210.itch.io/game-jam-2025-god-of-ancient-tomb
 BinaryBlitz|assets/img/Games/BinaryBlitz.png|https://dj3d.itch.io/binaryblitz
